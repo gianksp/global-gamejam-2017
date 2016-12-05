@@ -6,6 +6,7 @@ public class Obstacle : MonoBehaviour {
 	public float limitZ;
 	public float speedRate=0.75f;
 
+
 	// Use this for initialization
 	void Start () {
 		limitZ = GameObject.FindGameObjectWithTag("Player").transform.position.z;
@@ -21,4 +22,5 @@ public class Obstacle : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
+
 }

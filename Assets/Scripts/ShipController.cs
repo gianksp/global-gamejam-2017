@@ -68,6 +68,8 @@ public class ShipController : MonoBehaviour {
 		_isFiring = true;
 		foreach (Transform cannon in ship.cannons) {
 			GameObject obj = (GameObject)Object.Instantiate (ship.bullet,cannon.position,ship.transform.rotation);
+			Bullet bullet = obj.GetComponent<Bullet>();
+			bullet.damage = ship.damage;
 			Rigidbody rb = obj.GetComponent<Rigidbody>();
 			rb.AddForce (ship.transform.forward * 1000f);
 			ship.audio.PlayOneShot (ship.laserSound);

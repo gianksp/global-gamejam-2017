@@ -28,8 +28,8 @@ public class Ship : MonoBehaviour {
 	public float energyRegen = 5f;
 
 	private Rigidbody _rb;
-	public Skybox sky;
 
+	public GameObject explosion;
 
 	// Use this for initialization
 	void Start () {
@@ -46,11 +46,6 @@ public class Ship : MonoBehaviour {
 		float angleY = Mathf.LerpAngle(transform.eulerAngles.y, marker.position.x*2f, Time.time);
 		float angleX = Mathf.LerpAngle(transform.eulerAngles.x, -marker.position.y*3f, Time.time);
 		transform.eulerAngles = new Vector3 (angleX, angleY, -4 * _rb.velocity.x);
-
-
-		float delta = angleY > 180f ? -(360f - angleY) : angleY;
-		Debug.Log (delta);
-		sky.material.SetFloat ("_Rotation", 230+delta*0.025f);
 	}
 
 	void RegenEnergy() {
@@ -69,7 +64,8 @@ public class Ship : MonoBehaviour {
 
 	}
 
-	void OnCollisionEnter() {
+	void OnCollisionEnter(Collision collision) {
+		Instantiate (explosion, collision.transform.position, Quaternion.identity);
 		energy -= 20f;
 	}
 }
