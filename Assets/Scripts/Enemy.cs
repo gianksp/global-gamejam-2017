@@ -16,8 +16,7 @@ public class Enemy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		limitZ = GameObject.FindGameObjectWithTag("Player").transform.position.z;
-//		transform.localScale = new Vector3 (Random.Range (1, 15), Random.Range (1,30), Random.Range (1,4));
-		transform.position = new Vector3 (Random.Range (-100, 100), 0, 255);
+		transform.position = new Vector3 (Random.Range (-20, 20), 0, 255);
 		_rb = gameObject.GetComponent<Rigidbody> ();
 	}
 
@@ -35,7 +34,7 @@ public class Enemy : MonoBehaviour {
 			hp = hp - bullet.damage;
 			if (hp <= 0) {
 				UIController.IncreaseScore (points);
-				GameObject.Instantiate (explosion, transform.position, transform.rotation);
+//				GameObject.Instantiate (explosion, transform.position, transform.rotation);
 				Destroy (gameObject);
 			}
 		}

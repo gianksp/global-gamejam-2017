@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("CreateEnemy", 0f, 1f);
+		InvokeRepeating("CreateEnemy", 0f, 4f);
 	}
 
 	// Update is called once per frame

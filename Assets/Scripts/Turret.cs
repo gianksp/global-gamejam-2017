@@ -10,11 +10,13 @@ public class Turret : MonoBehaviour {
 
 	public Transform cannon;
 	public GameObject projectile;
+	public GameObject missileProjectile;
 
 	// Use this for initialization
 	void Start () {
 		ship = GameObject.FindGameObjectWithTag ("Ship");
-		InvokeRepeating ("Fire", 1, reattack);
+		InvokeRepeating ("FireLaser", 1, reattack);
+		InvokeRepeating ("FireMissile", 2, reattack*3);
 	}
 
 	// Update is called once per frame
@@ -27,11 +29,22 @@ public class Turret : MonoBehaviour {
 
 	}
 
-	void Fire() {
+	void FireLaser() {
 		GameObject obj = (GameObject)Object.Instantiate (projectile,cannon.position,ship.transform.rotation);
 		Bullet bullet = obj.GetComponent<Bullet>();
 		bullet.damage = damage;
 		Rigidbody rb = obj.GetComponent<Rigidbody>();
 		rb.AddForce (cannon.transform.forward * 1000f);
+	}
+
+	void FireMissile() {
+	
+		for (int index = 0; index < 5; index++) {
+			Vector3 randomRot = new Vector3 (Random.Range(-180,0),Random.Range (45, 90), 0);
+			GameObject obj = (GameObject)Object.Instantiate (missileProjectile, new Vector3 (cannon.position.x+Random.Range(-15,15), cannon.position.y + Random.Range(-3,3), cannon.position.z-4f), Quaternion.Euler (randomRot));
+			Missile missile = obj.GetComponent<Missile> ();
+			missile.damage = damage * 4;
+			missile.target = ship.transform;
+		}
 	}
 }

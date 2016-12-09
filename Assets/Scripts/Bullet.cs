@@ -17,7 +17,7 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		GameObject.Instantiate (explosion, transform.position, transform.rotation);
+//		GameObject.Instantiate (explosion, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
 }

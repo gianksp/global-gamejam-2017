@@ -65,7 +65,7 @@ public class Ship : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		Instantiate (explosion, collision.transform.position, Quaternion.identity);
+//		Instantiate (explosion, collision.transform.position, Quaternion.identity);
 		energy -= 20f;
 	}
 }
