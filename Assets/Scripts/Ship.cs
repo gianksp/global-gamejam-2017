@@ -57,7 +57,7 @@ public class Ship : MonoBehaviour {
 		RaycastHit hit;
 		target = null;
 		if (Physics.Raycast (transform.position, cannons[0].forward, out hit)) {
-			if (hit.distance <= radarRange && hit.transform.gameObject.tag == "Enemy") {
+			if (hit.distance <= radarRange && hit.transform.gameObject.CompareTag("Enemy")) {
 				target = hit.transform.gameObject;
 			}
 		}
