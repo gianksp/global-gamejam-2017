@@ -10,6 +10,10 @@ public class ShipController : MonoBehaviour {
 
 	private bool _isFiring = false;
 
+	void Awake() {
+		Application.targetFrameRate = 60;	
+	}
+
 	// Use this for initialization
 	void Start () {
 		origin = transform.position;

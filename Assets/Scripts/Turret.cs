@@ -16,7 +16,7 @@ public class Turret : MonoBehaviour {
 	void Start () {
 		ship = GameObject.FindGameObjectWithTag ("Ship");
 		InvokeRepeating ("FireLaser", 1, reattack);
-//		InvokeRepeating ("FireMissile", 2, reattack*3);
+		InvokeRepeating ("FireMissile", 2, reattack*10f);
 	}
 
 	// Update is called once per frame
@@ -45,7 +45,7 @@ public class Turret : MonoBehaviour {
 
 	void FireMissile() {
 	
-		for (int index = 0; index < 5; index++) {
+		for (int index = 0; index < 3; index++) {
 			Vector3 randomRot = new Vector3 (Random.Range(-180,0),Random.Range (45, 90), 0);
 			GameObject obj = (GameObject)Object.Instantiate (missileProjectile, new Vector3 (cannon.position.x+Random.Range(-15,15), cannon.position.y + Random.Range(-3,3), cannon.position.z-4f), Quaternion.Euler (randomRot));
 			Missile missile = obj.GetComponent<Missile> ();
