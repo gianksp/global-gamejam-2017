@@ -16,7 +16,7 @@ public class Turret : MonoBehaviour {
 	void Start () {
 		ship = GameObject.FindGameObjectWithTag ("Ship");
 		InvokeRepeating ("FireLaser", 1, reattack);
-		InvokeRepeating ("FireMissile", 2, reattack*3);
+//		InvokeRepeating ("FireMissile", 2, reattack*3);
 	}
 
 	// Update is called once per frame
@@ -30,11 +30,17 @@ public class Turret : MonoBehaviour {
 	}
 
 	void FireLaser() {
-		GameObject obj = (GameObject)Object.Instantiate (projectile,cannon.position,ship.transform.rotation);
+		Vector3 tar = ship.transform.position - transform.position;
+//		Vector3 dir = new Vector3 (tar.x+Random.Range(-5,5)/5,tar.y+Random.Range(-5,5)/5,tar.z+Random.Range(-5,5)/5);
+
+		var targetRotation = Quaternion.LookRotation(tar);
+
+		GameObject obj = (GameObject)Object.Instantiate (projectile,cannon.position,targetRotation);
+		//Add minimum variance in aim to laser rotation 
 		Bullet bullet = obj.GetComponent<Bullet>();
 		bullet.damage = damage;
 		Rigidbody rb = obj.GetComponent<Rigidbody>();
-		rb.AddForce (cannon.transform.forward * 1000f);
+		rb.AddForce (bullet.transform.forward * 1000f);
 	}
 
 	void FireMissile() {

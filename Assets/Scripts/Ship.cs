@@ -52,18 +52,6 @@ public class Ship : MonoBehaviour {
 		energy += energyRegen;
 	}
 
-	void FixedUpdate() {
-	
-		RaycastHit hit;
-		target = null;
-		if (Physics.Raycast (transform.position, cannons[0].forward, out hit)) {
-			if (hit.distance <= radarRange && hit.transform.gameObject.CompareTag("Enemy")) {
-				target = hit.transform.gameObject;
-			}
-		}
-
-	}
-
 	void OnCollisionEnter(Collision collision) {
 //		Instantiate (explosion, collision.transform.position, Quaternion.identity);
 		energy -= 20f;

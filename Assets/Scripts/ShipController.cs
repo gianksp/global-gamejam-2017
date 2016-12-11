@@ -29,8 +29,8 @@ public class ShipController : MonoBehaviour {
 	#if UNITY_IPHONE || UNITY_ANDROID
 		
 		if (Input.touchCount > 0) {
-			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.GetTouch (0).position.x, Input.GetTouch (0).position.y, zed));
-			transform.position = new Vector3 (pos.x, pos.y, zed);
+			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.GetTouch (0).position.x, Input.GetTouch (0).position.y+1.5f, zed));
+			transform.position = new Vector3 (pos.x, pos.y+1.5f, zed);
 		} else {
 			transform.position = origin;
 		}
@@ -71,7 +71,14 @@ public class ShipController : MonoBehaviour {
 			Bullet bullet = obj.GetComponent<Bullet>();
 			bullet.damage = ship.damage;
 			Rigidbody rb = obj.GetComponent<Rigidbody>();
-			rb.AddForce (ship.transform.forward * 1000f);
+
+			if (ship.target != null) {
+				bullet.transform.LookAt (ship.target.transform.position);
+			} else {
+				bullet.transform.rotation = cannon.transform.rotation;
+			}
+
+			rb.AddForce (bullet.transform.forward * 1000f);
 			ship.audio.PlayOneShot (ship.laserSound);
 			yield return new WaitForSeconds(ship.reattack/ship.cannons.Length);
 		}

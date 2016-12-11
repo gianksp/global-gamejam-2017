@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour {
 			hp = hp - bullet.damage;
 			if (hp <= 0) {
 				UIController.IncreaseScore (points);
-//				GameObject.Instantiate (explosion, transform.position, transform.rotation);
+				GameObject.Instantiate (explosion, transform.position, transform.rotation);
 				Destroy (gameObject);
 			}
 		}
