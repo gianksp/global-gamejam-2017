@@ -8,7 +8,7 @@ public class ShipController : MonoBehaviour {
 	public float zed = 10;
 	public Ship ship;
 
-	private bool _isFiring = false;
+	public bool isFiring = false;
 
 	void Awake() {
 		Application.targetFrameRate = 60;	
@@ -58,7 +58,7 @@ public class ShipController : MonoBehaviour {
 	/// Open fire
 	/// </summary>
 	void Fire() {
-		if (ship.target != null && !_isFiring) {
+		if (ship.target != null && !isFiring) {
 			StartCoroutine ("shoot");
 		}
 	}
@@ -69,7 +69,7 @@ public class ShipController : MonoBehaviour {
 	/// <returns>The projectile.</returns>
 	IEnumerator shoot ()
 	{
-		_isFiring = true;
+		isFiring = true;
 		foreach (Transform cannon in ship.cannons) {
 			GameObject obj = (GameObject)Object.Instantiate (ship.bullet,cannon.position,ship.transform.rotation);
 			Bullet bullet = obj.GetComponent<Bullet>();
@@ -86,7 +86,7 @@ public class ShipController : MonoBehaviour {
 			ship.audio.PlayOneShot (ship.laserSound);
 			yield return new WaitForSeconds(ship.reattack/ship.cannons.Length);
 		}
-		_isFiring = false;
+		isFiring = false;
 	}
 
 }

@@ -1,0 +1,498 @@
+# Blender MTL File: 'vf31 pepakura4-2-1.blend'
+# Material Count: 46
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.409650 0.116312
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\punta_final.png
+
+newmtl Material.001
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.248883 0.198081 0.366029
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\punta_final.png
+
+newmtl Material.001_punta_final_INVER.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.248883 0.198081 0.366029
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\punta_final_INVER.png
+
+newmtl Material.002
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.791448 0.766112
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.003
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.171446 0.313577 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12_SIDE2.png
+
+newmtl Material.003_parte12.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.171446 0.313577 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.004
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.497629 0.640000 0.174679
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\kaos_unit.jpg
+
+newmtl Material.005
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.033788 0.032961 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12_SIDE2.png
+
+newmtl Material.005_parte12.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.033788 0.032961 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.006
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.520010 0.032769 0.109464
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte13_INVERpierna.png
+
+newmtl Material.006_parte12.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.520010 0.032769 0.109464
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.006_parte12_SIDE2.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.520010 0.032769 0.109464
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12_SIDE2.png
+
+newmtl Material.007
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.161516 0.127098 0.136009
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\patas.png
+
+newmtl Material.008
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.343374 0.277063 0.110952
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.008_trasera_arma.jpg
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.343374 0.277063 0.110952
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\trasera_arma.jpg
+
+newmtl Material.009
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.193340 0.310155 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\ante-decopata-decocabez.png
+
+newmtl Material.010
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.208151 0.307353 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\ante-decopata-decocabez.png
+
+newmtl Material.011
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.568993 0.800000 0.445664
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_back.png
+
+newmtl Material.011_aleron_front_1.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.568993 0.800000 0.445664
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_front_1.png
+
+newmtl Material.011_aleron_front_2.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.568993 0.800000 0.445664
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_front_2.png
+
+newmtl Material.012
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.242926 0.417378 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.013
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.471170 0.199612 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.014
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.009958 0.050054
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\testhombros.jpg
+
+newmtl Material.014_parte12.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.009958 0.050054
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.015
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.267453 0.195201 0.201511
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\patas.png
+
+newmtl Material.016
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.139028 0.371190
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_back.png
+
+newmtl Material.016_aleron_front_1.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.139028 0.371190
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_front_1.png
+
+newmtl Material.016_aleron_front_2.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.139028 0.371190
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\aleron_front_2.png
+
+newmtl Material.017
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.137450 0.640000 0.260495
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\testhombros.jpg
+
+newmtl Material.017_parte12.png
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.137450 0.640000 0.260495
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.018
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.132788 0.044457 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\ante-decopata-decocabez.png
+
+newmtl Material.020
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.261684 0.030601 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\ante-decopata-decocabez.png
+
+newmtl Material.021
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.202349 0.202349 0.202349
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.022
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.465934 0.800000 0.305116
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.023
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.438278 0.112236
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\punta_final.png
+
+newmtl Material.024
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.079844 0.069325
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.025
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.046193 0.014853 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.025_testbrazo.jpg
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.046193 0.014853 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\testbrazo.jpg
+
+newmtl Material.026
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.158438 0.640000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl Material.028
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.022065 0.004928 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\kaos_ray1-2.png
+
+newmtl Material.029
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.556399 0.336659 0.640000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\kaos_ray1-2.png
+
+newmtl None
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\kaos_ray1-2.png
+
+newmtl None_arma_kaos.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\arma_kaos.jpg
+
+newmtl None_arma_kaos_SIDE2.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\arma_kaos_SIDE2.jpg
+
+newmtl None_parte12.png
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\parte12.png
+
+newmtl None_testbrazo.jpg
+Ns 0
+Ka 0.000000 0.000000 0.000000
+Kd 0.8 0.8 0.8
+Ks 0.8 0.8 0.8
+d 1
+illum 2
+map_Kd C:\Users\MENTO\Pictures\vf 31\textura\testbrazo.jpg

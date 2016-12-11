@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: f63ace5ae8ef54159b6d27546415388b
+timeCreated: 1481424427
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: air brake
+    100002: air brake insides
+    100004: air brake piston
+    100006: air brake up
+    100008: arm
+    100010: 'arm '
+    100012: back
+    100014: back_hatch
+    100016: battloid plating
+    100018: bottom plate
+    100020: butt
+    100022: 'butt '
+    100024: Camera
+    100026: 'Camera '
+    100028: Camera  1
+    100030: canopy
+    100032: cockpit
+    100034: Directional Light
+    100036: ears
+    100038: elbow
+    100040: 'elbow '
+    100042: fin
+    100044: 'fin '
+    100046: floor
+    100048: forearm
+    100050: 'forearm '
+    100052: front
+    100054: glass
+    100056: gunpod
+    100058: head
+    100060: heel
+    100062: 'heel '
+    100064: intake
+    100066: 'intake '
+    100068: intake_cover
+    100070: 'intake_cover '
+    100072: knee
+    100074: 'knee '
+    100076: landing gear
+    100078: landing gear door
+    100080: 'landing gear door '
+    100082: landing gear door 2
+    100084: 'landing gear door 2 '
+    100086: landing gear door 3
+    100088: landing gear door light
+    100090: 'landing gear door light '
+    100092: landing gear door light open
+    100094: 'landing gear door light open '
+    100096: landing gear door lower
+    100098: 'landing gear door lower '
+    100100: landing gear door lower open
+    100102: 'landing gear door lower open '
+    100104: landing gear door upper
+    100106: 'landing gear door upper '
+    100108: landing gear door upper open
+    100110: 'landing gear door upper open '
+    100112: leg fin
+    100114: 'leg fin '
+    100116: lower leg
+    100118: 'lower leg '
+    100120: lower leg b
+    100122: 'lower leg b '
+    100124: missiles
+    100126: neck
+    100128: 'nose '
+    100130: ref
+    100132: shoulder
+    100134: 'shoulder '
+    100136: side
+    100138: tail
+    100140: thigh
+    100142: 'thigh '
+    100144: toe
+    100146: 'toe '
+    100148: top
+    100150: 'top '
+    100152: trigger
+    100154: //RootNode
+    100156: wing
+    100158: 'wing '
+    400000: air brake
+    400002: air brake insides
+    400004: air brake piston
+    400006: air brake up
+    400008: arm
+    400010: 'arm '
+    400012: back
+    400014: back_hatch
+    400016: battloid plating
+    400018: bottom plate
+    400020: butt
+    400022: 'butt '
+    400024: Camera
+    400026: 'Camera '
+    400028: Camera  1
+    400030: canopy
+    400032: cockpit
+    400034: Directional Light
+    400036: ears
+    400038: elbow
+    400040: 'elbow '
+    400042: fin
+    400044: 'fin '
+    400046: floor
+    400048: forearm
+    400050: 'forearm '
+    400052: front
+    400054: glass
+    400056: gunpod
+    400058: head
+    400060: heel
+    400062: 'heel '
+    400064: intake
+    400066: 'intake '
+    400068: intake_cover
+    400070: 'intake_cover '
+    400072: knee
+    400074: 'knee '
+    400076: landing gear
+    400078: landing gear door
+    400080: 'landing gear door '
+    400082: landing gear door 2
+    400084: 'landing gear door 2 '
+    400086: landing gear door 3
+    400088: landing gear door light
+    400090: 'landing gear door light '
+    400092: landing gear door light open
+    400094: 'landing gear door light open '
+    400096: landing gear door lower
+    400098: 'landing gear door lower '
+    400100: landing gear door lower open
+    400102: 'landing gear door lower open '
+    400104: landing gear door upper
+    400106: 'landing gear door upper '
+    400108: landing gear door upper open
+    400110: 'landing gear door upper open '
+    400112: leg fin
+    400114: 'leg fin '
+    400116: lower leg
+    400118: 'lower leg '
+    400120: lower leg b
+    400122: 'lower leg b '
+    400124: missiles
+    400126: neck
+    400128: 'nose '
+    400130: ref
+    400132: shoulder
+    400134: 'shoulder '
+    400136: side
+    400138: tail
+    400140: thigh
+    400142: 'thigh '
+    400144: toe
+    400146: 'toe '
+    400148: top
+    400150: 'top '
+    400152: trigger
+    400154: //RootNode
+    400156: wing
+    400158: 'wing '
+    2300000: air brake
+    2300002: air brake insides
+    2300004: air brake piston
+    2300006: air brake up
+    2300008: arm
+    2300010: 'arm '
+    2300012: back
+    2300014: back_hatch
+    2300016: battloid plating
+    2300018: bottom plate
+    2300020: butt
+    2300022: 'butt '
+    2300024: canopy
+    2300026: cockpit
+    2300028: ears
+    2300030: elbow
+    2300032: 'elbow '
+    2300034: fin
+    2300036: 'fin '
+    2300038: floor
+    2300040: forearm
+    2300042: 'forearm '
+    2300044: glass
+    2300046: gunpod
+    2300048: head
+    2300050: heel
+    2300052: 'heel '
+    2300054: intake
+    2300056: 'intake '
+    2300058: intake_cover
+    2300060: 'intake_cover '
+    2300062: knee
+    2300064: 'knee '
+    2300066: landing gear
+    2300068: landing gear door
+    2300070: 'landing gear door '
+    2300072: landing gear door 2
+    2300074: 'landing gear door 2 '
+    2300076: landing gear door 3
+    2300078: landing gear door light
+    2300080: 'landing gear door light '
+    2300082: landing gear door light open
+    2300084: 'landing gear door light open '
+    2300086: landing gear door lower
+    2300088: 'landing gear door lower '
+    2300090: landing gear door lower open
+    2300092: 'landing gear door lower open '
+    2300094: landing gear door upper
+    2300096: 'landing gear door upper '
+    2300098: landing gear door upper open
+    2300100: 'landing gear door upper open '
+    2300102: leg fin
+    2300104: 'leg fin '
+    2300106: lower leg
+    2300108: 'lower leg '
+    2300110: lower leg b
+    2300112: 'lower leg b '
+    2300114: missiles
+    2300116: neck
+    2300118: 'nose '
+    2300120: shoulder
+    2300122: 'shoulder '
+    2300124: tail
+    2300126: thigh
+    2300128: 'thigh '
+    2300130: toe
+    2300132: 'toe '
+    2300134: top
+    2300136: trigger
+    2300138: wing
+    2300140: 'wing '
+    3300000: air brake
+    3300002: air brake insides
+    3300004: air brake piston
+    3300006: air brake up
+    3300008: arm
+    3300010: 'arm '
+    3300012: back
+    3300014: back_hatch
+    3300016: battloid plating
+    3300018: bottom plate
+    3300020: butt
+    3300022: 'butt '
+    3300024: canopy
+    3300026: cockpit
+    3300028: ears
+    3300030: elbow
+    3300032: 'elbow '
+    3300034: fin
+    3300036: 'fin '
+    3300038: floor
+    3300040: forearm
+    3300042: 'forearm '
+    3300044: glass
+    3300046: gunpod
+    3300048: head
+    3300050: heel
+    3300052: 'heel '
+    3300054: intake
+    3300056: 'intake '
+    3300058: intake_cover
+    3300060: 'intake_cover '
+    3300062: knee
+    3300064: 'knee '
+    3300066: landing gear
+    3300068: landing gear door
+    3300070: 'landing gear door '
+    3300072: landing gear door 2
+    3300074: 'landing gear door 2 '
+    3300076: landing gear door 3
+    3300078: landing gear door light
+    3300080: 'landing gear door light '
+    3300082: landing gear door light open
+    3300084: 'landing gear door light open '
+    3300086: landing gear door lower
+    3300088: 'landing gear door lower '
+    3300090: landing gear door lower open
+    3300092: 'landing gear door lower open '
+    3300094: landing gear door upper
+    3300096: 'landing gear door upper '
+    3300098: landing gear door upper open
+    3300100: 'landing gear door upper open '
+    3300102: leg fin
+    3300104: 'leg fin '
+    3300106: lower leg
+    3300108: 'lower leg '
+    3300110: lower leg b
+    3300112: 'lower leg b '
+    3300114: missiles
+    3300116: neck
+    3300118: 'nose '
+    3300120: shoulder
+    3300122: 'shoulder '
+    3300124: tail
+    3300126: thigh
+    3300128: 'thigh '
+    3300130: toe
+    3300132: 'toe '
+    3300134: top
+    3300136: trigger
+    3300138: wing
+    3300140: 'wing '
+    4300000: 'nose '
+    4300002: landing gear door
+    4300004: 'landing gear door '
+    4300006: landing gear door 2
+    4300008: 'landing gear door 2 '
+    4300010: landing gear door 3
+    4300012: cockpit
+    4300014: canopy
+    4300016: glass
+    4300018: neck
+    4300020: head
+    4300022: ears
+    4300024: shoulder
+    4300026: arm
+    4300028: elbow
+    4300030: forearm
+    4300032: intake
+    4300034: thigh
+    4300036: lower leg
+    4300038: landing gear door lower
+    4300040: landing gear door lower open
+    4300042: landing gear door upper
+    4300044: landing gear door upper open
+    4300046: landing gear door light
+    4300048: landing gear door light open
+    4300050: knee
+    4300052: leg fin
+    4300054: lower leg b
+    4300056: toe
+    4300058: heel
+    4300060: intake_cover
+    4300062: wing
+    4300064: tail
+    4300066: fin
+    4300068: 'fin '
+    4300070: back_hatch
+    4300072: back
+    4300074: bottom plate
+    4300076: top
+    4300078: air brake insides
+    4300080: air brake up
+    4300082: air brake
+    4300084: air brake piston
+    4300086: landing gear
+    4300088: floor
+    4300090: missiles
+    4300092: gunpod
+    4300094: butt
+    4300096: 'butt '
+    4300098: trigger
+    4300100: 'shoulder '
+    4300102: 'arm '
+    4300104: 'elbow '
+    4300106: 'forearm '
+    4300108: 'wing '
+    4300110: 'intake '
+    4300112: 'thigh '
+    4300114: 'lower leg '
+    4300116: 'landing gear door lower '
+    4300118: 'landing gear door lower open '
+    4300120: 'landing gear door upper '
+    4300122: 'landing gear door upper open '
+    4300124: 'landing gear door light '
+    4300126: 'landing gear door light open '
+    4300128: 'knee '
+    4300130: 'leg fin '
+    4300132: 'lower leg b '
+    4300134: 'toe '
+    4300136: 'heel '
+    4300138: 'intake_cover '
+    4300140: battloid plating
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
