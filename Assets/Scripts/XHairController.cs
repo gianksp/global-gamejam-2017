@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class XHairController : MonoBehaviour {
 
@@ -12,6 +13,10 @@ public class XHairController : MonoBehaviour {
 	public Color currentColor;
 	public Color colorOrg;
 	public Renderer rend;
+
+	public static List<GameObject> targets = new List<GameObject>();
+	public Texture lockImage;
+
 
 	// Use this for initialization
 	void Start () {
@@ -31,8 +36,12 @@ public class XHairController : MonoBehaviour {
 			RaycastHit hit;
 			ship.target = null;
 			if (Physics.Raycast (transform.position, dir, out hit)) {
-				if (hit.distance <= ship.radarRange && hit.transform.gameObject.CompareTag ("Enemy")) {
-					ship.target = hit.transform.gameObject;
+				if (hit.distance <= ship.radarRange) {
+
+					if (hit.transform.gameObject.CompareTag ("Enemy") || hit.transform.gameObject.CompareTag ("Missile")) {
+						ship.target = hit.transform.gameObject;
+						AddTarget (hit.transform.gameObject);
+					}
 				}
 			}
 		}
@@ -42,5 +51,25 @@ public class XHairController : MonoBehaviour {
 		} else {
 			rend.material.color = Color.Lerp(currentColor, colorOrg, 1.5f);
 		}
+	}
+
+	public static void AddTarget(GameObject obj) {
+		if (!targets.Contains (obj)) {
+			targets.Add (obj);
+		}	
+	}
+
+	public static void RemoveTarget(GameObject obj) {
+		targets.Remove (obj);
+	}
+
+	void OnGUI() {
+		
+//		if (ship.target != null) {
+			foreach(GameObject tar in targets) {
+				Vector3 position = Camera.main.WorldToScreenPoint(tar.transform.position);
+				GUI.DrawTexture(new Rect(position.x-25, Screen.height-(position.y+25), 50,50), lockImage);
+			}
+//		}
 	}
 }

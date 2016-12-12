@@ -36,7 +36,7 @@ public class ShipController : MonoBehaviour {
 			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.GetTouch (0).position.x, Input.GetTouch (0).position.y+1.5f, zed));
 			transform.position = new Vector3 (pos.x, pos.y+1.5f, zed);
 		} else {
-			transform.position = origin;
+//			transform.position = origin;
 		}
 
 	#endif
@@ -47,7 +47,7 @@ public class ShipController : MonoBehaviour {
 			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, zed));
 			transform.position = new Vector3 (pos.x, pos.y, zed);
 		} else {
-			transform.position = origin;
+//			transform.position = origin;
 		}
 
 	#endif
