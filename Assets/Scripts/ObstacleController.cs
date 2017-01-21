@@ -3,11 +3,11 @@ using System.Collections;
 
 public class ObstacleController : MonoBehaviour {
 
-	public GameObject obstacle;
+	public GameObject[] obstacle;
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("CreateObstacle", 0f, 0.3f);
+		InvokeRepeating("CreateObstacle", 0f, 0.2f);
 	}
 	
 	// Update is called once per frame
@@ -16,7 +16,7 @@ public class ObstacleController : MonoBehaviour {
 	}
 
 	void CreateObstacle () {
-
-		GameObject obj = Object.Instantiate (obstacle);
+		GameObject obs = (GameObject)obstacle.GetValue (Random.Range(0,obstacle.Length - 1));
+		GameObject obj = Object.Instantiate (obs);
 	}
 }

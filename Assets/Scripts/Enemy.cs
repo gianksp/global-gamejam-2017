@@ -15,8 +15,9 @@ public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		speedRate = Random.Range (1, 4);
 		limitZ = GameObject.FindGameObjectWithTag("Player").transform.position.z;
-		transform.position = new Vector3 (Random.Range (-20, 20), 0, 255);
+		transform.position = new Vector3 (Random.Range (-20, 20), Random.Range(-30,30), 255);
 		_rb = gameObject.GetComponent<Rigidbody> ();
 	}
 
