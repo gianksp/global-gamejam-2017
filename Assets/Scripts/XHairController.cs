@@ -66,10 +66,10 @@ public class XHairController : MonoBehaviour {
 	void OnGUI() {
 		
 //		if (ship.target != null) {
-			foreach(GameObject tar in targets) {
-				Vector3 position = Camera.main.WorldToScreenPoint(tar.transform.position);
-				GUI.DrawTexture(new Rect(position.x-25, Screen.height-(position.y+25), 50,50), lockImage);
-			}
+//			foreach(GameObject tar in targets) {
+//				Vector3 position = Camera.main.WorldToScreenPoint(tar.transform.position);
+//				GUI.DrawTexture(new Rect(position.x-25, Screen.height-(position.y+25), 50,50), lockImage);
+//			}
 //		}
 	}
 }

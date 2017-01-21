@@ -43,8 +43,8 @@ public class Ship : MonoBehaviour {
 		
 		Vector3 destin = marker.position - transform.position;
 		_rb.AddForce(destin *10f,ForceMode.Acceleration);
-		float angleY = Mathf.LerpAngle(transform.eulerAngles.y, marker.position.x*4f, Time.time);
-		float angleX = Mathf.LerpAngle(transform.eulerAngles.x, -marker.position.y*3.5f, Time.time);
+		float angleY = Mathf.LerpAngle(transform.eulerAngles.y, marker.position.x, Time.time);
+		float angleX = Mathf.LerpAngle(transform.eulerAngles.x, -marker.position.y, Time.time);
 		transform.eulerAngles = new Vector3 (angleX, angleY, -4 * _rb.velocity.x);
 	}
 

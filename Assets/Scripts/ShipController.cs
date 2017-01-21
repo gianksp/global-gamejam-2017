@@ -30,27 +30,40 @@ public class ShipController : MonoBehaviour {
 	/// </summary>
 	void Move() {
 
-	#if UNITY_IPHONE || UNITY_ANDROID
-		
-		if (Input.touchCount > 0) {
-			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.GetTouch (0).position.x, Input.GetTouch (0).position.y+1.5f, zed));
-			transform.position = new Vector3 (pos.x, pos.y+1.5f, zed);
-		} else {
-//			transform.position = origin;
-		}
+//	#if UNITY_IPHONE || UNITY_ANDROID
+//		
+//		if (Input.touchCount > 0) {
+//			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.GetTouch (0).position.x, Input.GetTouch (0).position.y+1.5f, zed));
+//			transform.position = new Vector3 (pos.x, pos.y+1.5f, zed);
+//		} else {
+////			transform.position = origin;
+//		}
+//
+//	#endif
+//		
+//	#if UNITY_EDITOR || UNITY_WEBGL
 
-	#endif
-		
-	#if UNITY_EDITOR || UNITY_WEBGL
-
-		if (Input.GetButton ("Fire1")) {
-			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, zed));
+//		if (Input.GetButton ("Fire1")) {
+//			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, zed));
+		Vector3 pos = Camera.main.transform.forward*40;
 			transform.position = new Vector3 (pos.x, pos.y, zed);
-		} else {
+		Debug.Log (Camera.main.transform.forward.ToString ());
+//		} else {
 //			transform.position = origin;
-		}
+//		}
 
-	#endif
+//	#endif
+
+
+
+		Ray ray = Camera.main.ViewportPointToRay(Vector3.forward);
+		RaycastHit hit;
+		if (Physics.Raycast(ray, out hit))
+			print("I'm looking at " + hit.transform.name);
+		else
+			print("I'm looking at nothing!");
+
+
 		
 	}
 
