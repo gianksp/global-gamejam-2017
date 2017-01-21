@@ -39,7 +39,7 @@ public class XHairController : MonoBehaviour {
 			if (Physics.Raycast (transform.position, dir, out hit)) {
 				if (hit.distance <= ship.radarRange) {
 
-					if (hit.transform.gameObject.CompareTag ("Enemy") || hit.transform.gameObject.CompareTag ("Missile")) {
+					if (hit.transform.gameObject.CompareTag ("Enemy") || hit.transform.gameObject.CompareTag ("Missile") || hit.transform.gameObject.CompareTag ("Obstacle")) {
 						ship.target = hit.transform.gameObject;
 						AddTarget (hit.transform.gameObject);
 					}
