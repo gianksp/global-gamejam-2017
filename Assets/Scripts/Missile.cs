@@ -11,7 +11,7 @@ public class Missile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		Invoke ("Explode", 5f);
+		Invoke ("Explode", Random.Range(5,11));
 //		transform.eulerAngles = new Vector3 (Random.Range (30, 60), Random.Range (-30, 30), 0);
 
 		_rb = gameObject.GetComponent<Rigidbody>();
@@ -71,7 +71,7 @@ public class Missile : MonoBehaviour {
 		
 
 	void Explode() {
-//		GameObject.Instantiate (explosion, transform.position, transform.rotation);
+		GameObject.Instantiate (explosion, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
 }
