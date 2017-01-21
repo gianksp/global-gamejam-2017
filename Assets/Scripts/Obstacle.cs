@@ -5,6 +5,8 @@ public class Obstacle : MonoBehaviour {
 
 	public float limitZ;
 	public float speedRate=0.75f;
+	public float hp = 2f;
+	public GameObject explosion;
 
 
 	// Use this for initialization
@@ -24,5 +26,19 @@ public class Obstacle : MonoBehaviour {
 			Destroy (gameObject);
 		}
 	}
+
+
+		void OnCollisionEnter(Collision collision) {
+			if (collision.transform.tag == "Bullet") {
+				Bullet bullet = collision.transform.gameObject.GetComponent<Bullet>();
+				hp = hp - bullet.damage;
+				if (hp <= 0) {
+					//UIController.IncreaseScore (points);
+					GameObject.Instantiate (explosion, transform.position, transform.rotation);
+					Destroy (gameObject);
+				}
+			}
+		}
+
 
 }
