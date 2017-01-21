@@ -47,7 +47,7 @@ public class ShipController : MonoBehaviour {
 //			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, zed));
 		Vector3 pos = Camera.main.transform.forward*40;
 			transform.position = new Vector3 (pos.x, pos.y, zed);
-		Debug.Log (Camera.main.transform.forward.ToString ());
+		//Debug.Log (Camera.main.transform.forward.ToString ());
 //		} else {
 //			transform.position = origin;
 //		}
@@ -58,10 +58,10 @@ public class ShipController : MonoBehaviour {
 
 		Ray ray = Camera.main.ViewportPointToRay(Vector3.forward);
 		RaycastHit hit;
-		if (Physics.Raycast(ray, out hit))
-			print("I'm looking at " + hit.transform.name);
-		else
-			print("I'm looking at nothing!");
+		//if (Physics.Raycast(ray, out hit))
+			//print("I'm looking at " + hit.transform.name);
+		//else
+			//print("I'm looking at nothing!");
 
 
 		
