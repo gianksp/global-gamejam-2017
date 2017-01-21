@@ -15,7 +15,7 @@ public class Obstacle : MonoBehaviour {
 		speedRate = Random.Range (1, 10);
 		float scale = Random.Range (1, 10);
 		transform.localScale = new Vector3 (scale,scale,scale);
-		transform.position = new Vector3 (Random.Range (-100, 100), Random.Range(-40,40), Random.Range(250,300));
+		transform.position = new Vector3 (Random.Range (-100, 100), Random.Range(-40,40), 520);
 	}
 	
 	// Update is called once per frame
