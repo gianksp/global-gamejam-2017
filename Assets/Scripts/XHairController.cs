@@ -13,6 +13,7 @@ public class XHairController : MonoBehaviour {
 	public Color currentColor;
 	public Color colorOrg;
 	public Renderer rend;
+	public Camera[] cams;
 
 	public static List<GameObject> targets = new List<GameObject>();
 	public Texture lockImage;
@@ -63,13 +64,16 @@ public class XHairController : MonoBehaviour {
 		targets.Remove (obj);
 	}
 
-	void OnGUI() {
-		
+//	void OnGUI() {
+//		
 //		if (ship.target != null) {
 //			foreach(GameObject tar in targets) {
+//				foreach(Camera cam in cams) {
 //				Vector3 position = Camera.main.WorldToScreenPoint(tar.transform.position);
-//				GUI.DrawTexture(new Rect(position.x-25, Screen.height-(position.y+25), 50,50), lockImage);
+//					GUI.DrawTexture(new Rect(position.x, Screen.height-(position.y), 50,50), lockImage);
+//				}
+//
 //			}
 //		}
-	}
+//	}
 }
