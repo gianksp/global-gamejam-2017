@@ -18,7 +18,5 @@ public class ShockwaveController : MonoBehaviour {
 	void CreateShockwave () {
 
 		GameObject obj = Object.Instantiate (shockwave);
-		obj.transform.Rotate (new Vector3 (Random.Range (0, 360), Random.Range (0, 360), Random.Range (0, 360)));
-		obj.transform.position = new Vector3 (Random.Range (-20, 20), Random.Range(-15,15), Random.Range(0,500));
 	}
 }
