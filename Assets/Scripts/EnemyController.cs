@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour {
 	void Update () {
 		if (tutorialDialog.stateGame > 0 && !initiated) {
 			initiated = true;
-			InvokeRepeating("CreateEnemy", 0f, 4f);
+			InvokeRepeating("CreateEnemy", 0f, 0.7f);
 		}
 	}
 
