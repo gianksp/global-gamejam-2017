@@ -71,7 +71,7 @@ public class Missile : MonoBehaviour {
 		
 
 	void Explode() {
-		GameObject.Instantiate (explosion, transform.position, transform.rotation);
+//		GameObject.Instantiate (explosion, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
 }
