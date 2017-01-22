@@ -37,11 +37,12 @@ public class Shockwave : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
 
-		if (collision.transform.tag == "Obstacle" || collision.transform.tag == "Ship") {
-			Debug.Log (collision.transform.tag + " destroyed");
-
-			GameObject.Instantiate (explosion, collision.transform.position, collision.transform.rotation);
-			Destroy (collision.gameObject);
+		if (collision.transform.tag == "Obstacle") {
+//			Debug.Log (collision.transform.tag + " destroyed");
+			if (XHairController.weaponsHot == true) {
+				GameObject.Instantiate (explosion, collision.transform.position, collision.transform.rotation);
+				Destroy (collision.gameObject);
+			}
 		}
 //		if (collision.transform.tag == "Bullet") {
 //			Bullet bullet = collision.transform.gameObject.GetComponent<Bullet>();

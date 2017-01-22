@@ -13,30 +13,66 @@ public class Boss : MonoBehaviour {
 	public GameObject laser;
 
 	public GameObject[] eyeLasers;
+	public GameObject explosion;
 
 	private bool alive = false;
 	private bool isFiring = false;
+	public static bool dead = false;
+
+	private bool ended = false;
+
+	private bool invoked = false;
+
+	public bool restarting = false;
 
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("FireLaser", 28f, reattack);
 		InvokeRepeating ("FireMissile", 10f, reattackM);
 		InvokeRepeating ("Firing", 5f, 5f);
-		Invoke ("Live", 20f);
+//		Invoke ("Live", 20f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (alive) {
+		if (alive == true && ship != null && invoked == true) {
 			var targetRotation = Quaternion.LookRotation (ship.transform.position - transform.position);
 
 			// Smoothly rotate towards the target point.
 			transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, 0.5f* Time.deltaTime);
 		}
+
+		if (tutorialDialog.stateGame == 1 && alive == false) {
+			alive = true;
+			Invoke ("Live", 20f);
+		}
+
+		if (dead && !ended) {
+			ended = true;
+			GameObject.Instantiate (explosion, transform.position, transform.rotation);
+			Destroy (gameObject);
+			if (!restarting) {
+				restarting = true;
+				Invoke ("Restart",5f);
+			}
+		}
+
+	}
+
+	void Restart() {
+		XHairController.weaponsHot = false;
+		tutorialDialog.stateGame = 4;
+		tutorialDialog.arrayIndex = 0;
+		Invoke ("Replay", 5f);
+	}
+
+	void Replay() {
+		Application.LoadLevel ("Game");
 	}
 
 	void Live() {
-		alive = true;
+		invoked = true;
+		tutorialDialog.stateGame = 2;
 	}
 
 	void Firing() {

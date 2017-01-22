@@ -41,8 +41,10 @@ public class Obstacle : MonoBehaviour {
 
 
 	void OnCollisionEnter(Collision collision) {
-		GameObject.Instantiate (explosion, transform.position, transform.rotation);
-		Destroy (gameObject);
+		if (collision.transform.tag != "Eye") {
+			GameObject.Instantiate (explosion, transform.position, transform.rotation);
+			Destroy (gameObject);
+		}
 	}
 
 }

@@ -21,36 +21,42 @@ public class Turret : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
-		var targetRotation = Quaternion.LookRotation(ship.transform.position - transform.position);
 
-		// Smoothly rotate towards the target point.
-		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime);
+		if (ship != null) {
+			var targetRotation = Quaternion.LookRotation (ship.transform.position - transform.position);
+
+			// Smoothly rotate towards the target point.
+			transform.rotation = Quaternion.Slerp (transform.rotation, targetRotation, speed * Time.deltaTime);
+		}
 
 	}
 
 	void FireLaser() {
-		Vector3 tar = ship.transform.position - transform.position;
+		if (ship != null) {
+			Vector3 tar = ship.transform.position - transform.position;
 //		Vector3 dir = new Vector3 (tar.x+Random.Range(-5,5)/5,tar.y+Random.Range(-5,5)/5,tar.z+Random.Range(-5,5)/5);
 
-		var targetRotation = Quaternion.LookRotation(tar);
+			var targetRotation = Quaternion.LookRotation (tar);
 
-		GameObject obj = (GameObject)Object.Instantiate (projectile,cannon.position,targetRotation);
-		//Add minimum variance in aim to laser rotation 
-		Bullet bullet = obj.GetComponent<Bullet>();
-		bullet.damage = damage;
-		Rigidbody rb = obj.GetComponent<Rigidbody>();
-		rb.AddForce (bullet.transform.forward * 1000f);
+			GameObject obj = (GameObject)Object.Instantiate (projectile, cannon.position, targetRotation);
+			//Add minimum variance in aim to laser rotation 
+			Bullet bullet = obj.GetComponent<Bullet> ();
+			bullet.damage = damage;
+			Rigidbody rb = obj.GetComponent<Rigidbody> ();
+			rb.AddForce (bullet.transform.forward * 1000f);
+		}
 	}
 
 	void FireMissile() {
 	
-		for (int index = 0; index < 4; index++) {
-			Vector3 randomRot = new Vector3 (Random.Range(-180,180),Random.Range (30, 120), Random.Range(-90,90));
-			GameObject obj = (GameObject)Object.Instantiate (missileProjectile, new Vector3 (cannon.position.x+Random.Range(-15,15), cannon.position.y + Random.Range(-3,3), cannon.position.z-4f), Quaternion.Euler (randomRot));
-			Missile missile = obj.GetComponent<Missile> ();
-			missile.damage = damage * 4;
-			missile.target = ship.transform;
+		if (ship != null) {
+			for (int index = 0; index < 4; index++) {
+				Vector3 randomRot = new Vector3 (Random.Range (-180, 180), Random.Range (30, 120), Random.Range (-90, 90));
+				GameObject obj = (GameObject)Object.Instantiate (missileProjectile, new Vector3 (cannon.position.x + Random.Range (-15, 15), cannon.position.y + Random.Range (-3, 3), cannon.position.z - 4f), Quaternion.Euler (randomRot));
+				Missile missile = obj.GetComponent<Missile> ();
+				missile.damage = damage * 4;
+				missile.target = ship.transform;
+			}
 		}
 	}
 }

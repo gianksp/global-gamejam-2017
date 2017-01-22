@@ -7,7 +7,7 @@ public class ShockwaveController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("CreateShockwave", 0f, 10f);
+		InvokeRepeating("CreateShockwave", 8f, 5f);
 	}
 
 	// Update is called once per frame

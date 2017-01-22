@@ -30,9 +30,11 @@ public class Ship : MonoBehaviour {
 	private Rigidbody _rb;
 
 	public GameObject explosion;
+	private BoxCollider col;
 
 	// Use this for initialization
 	void Start () {
+		col = gameObject.GetComponent<BoxCollider> ();
 		_rb = GetComponent<Rigidbody>();
 		audio = GetComponent<AudioSource> ();
 		InvokeRepeating("RegenEnergy",1f,1f);
@@ -46,6 +48,10 @@ public class Ship : MonoBehaviour {
 		float angleY = Mathf.LerpAngle(transform.eulerAngles.y, marker.position.x*2f, Time.time);
 		float angleX = Mathf.LerpAngle(transform.eulerAngles.x, -marker.position.y*2f, Time.time);
 		transform.eulerAngles = new Vector3 (angleX, angleY, -4 * _rb.velocity.x);
+
+		if (XHairController.weaponsHot == true && col.enabled == false) {
+			col.enabled = true;
+		}
 	}
 
 	void RegenEnergy() {

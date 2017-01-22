@@ -5,14 +5,20 @@ public class EnemyController : MonoBehaviour {
 
 	public GameObject enemy;
 
+
+	private bool initiated = false;
+
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("CreateEnemy", 0f, 4f);
+		
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+		if (tutorialDialog.stateGame > 0 && !initiated) {
+			initiated = true;
+			InvokeRepeating("CreateEnemy", 0f, 4f);
+		}
 	}
 
 	void CreateEnemy () {

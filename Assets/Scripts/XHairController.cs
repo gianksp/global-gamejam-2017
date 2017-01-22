@@ -18,6 +18,7 @@ public class XHairController : MonoBehaviour {
 	public static List<GameObject> targets = new List<GameObject>();
 	public Texture lockImage;
 
+	public static bool weaponsHot = false;
 
 	// Use this for initialization
 	void Start () {
@@ -28,29 +29,33 @@ public class XHairController : MonoBehaviour {
 
 	void Update() {
 
-		transform.position =   Vector3.Lerp(transform.position, destination.position, Time.deltaTime*speed*2f);
-		transform.rotation =   Quaternion.Lerp (transform.rotation, destination.rotation, Time.deltaTime*speed);
+		if (ship != null) {
+			transform.position = Vector3.Lerp (transform.position, destination.position, Time.deltaTime * speed * 2f);
+			transform.rotation = Quaternion.Lerp (transform.rotation, destination.rotation, Time.deltaTime * speed);
 
-		if (allowTargeting) {
-			Vector3 dir = transform.position - Camera.main.transform.position;
+			if (allowTargeting) {
+				Vector3 dir = transform.position - Camera.main.transform.position;
 
-			RaycastHit hit;
-			ship.target = null;
-			if (Physics.Raycast (transform.position, dir, out hit)) {
-				if (hit.distance <= ship.radarRange) {
+				RaycastHit hit;
+				ship.target = null;
+				if (Physics.Raycast (transform.position, dir, out hit)) {
+					if (hit.distance <= ship.radarRange) {
 
-					if (hit.transform.gameObject.CompareTag ("Enemy") || hit.transform.gameObject.CompareTag ("Missile") || hit.transform.gameObject.CompareTag ("Obstacle") || hit.transform.tag == "Eye") {
-						ship.target = hit.transform.gameObject;
-						AddTarget (hit.transform.gameObject);
+						if (hit.transform.gameObject.CompareTag ("Enemy") || hit.transform.gameObject.CompareTag ("Missile") || hit.transform.gameObject.CompareTag ("Obstacle") || hit.transform.tag == "Eye") {
+							ship.target = hit.transform.gameObject;
+							AddTarget (hit.transform.gameObject);
+						}
 					}
 				}
 			}
-		}
 
-		if (ship.target != null) {
-			rend.material.color = Color.Lerp(currentColor, colorTarget, 0.5f);
+			if (ship.target != null) {
+				rend.material.color = Color.Lerp (currentColor, colorTarget, 0.5f);
+			} else {
+				rend.material.color = Color.Lerp (currentColor, colorOrg, 1.5f);
+			}
 		} else {
-			rend.material.color = Color.Lerp(currentColor, colorOrg, 1.5f);
+			rend.enabled = false;
 		}
 	}
 
